@@ -79,9 +79,59 @@ nav {
 }
 
 .navbar-email {
+    height: 100%;
     color: var(--dark);
     font-size: var(--sm);
     margin-right: 12px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+.navbar-email span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('https://www.svgrepo.com/show/393640/down-2.svg');
+}
+
+.email-dropbtn {
+    position: relative;
+}
+
+.email-dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0px 0px 6px 4px #c7c7c73b;
+    border-radius: 6px;
+    z-index: 1;
+    padding: 0 20px;
+    top: 61px;
+}
+
+.email-dropdown .email-dropdown-content a {
+    width: 100%;
+    color: var(--dark);
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: end;
+}
+
+.email-dropdown-content a:nth-child(2) {
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--text-input-field);
+}
+
+.email-dropdown .email-dropdown-content a:nth-child(3) {
+    color: var(--hospital-green);
+    margin-bottom: 30px;
+}
+
+.email-dropbtn:hover .email-dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .navbar-email a {
