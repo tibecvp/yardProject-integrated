@@ -200,8 +200,21 @@ nav {
     .menu-up a {
         margin-top: 40px;
     }
+
+    .menu-up .end-section {
+        padding-bottom: 40px;
+        border-bottom: 2px solid var(--text-input-field);
+    }
+
     .menu-down {
         margin-bottom: 50px;
+    }
+
+    .menu-down p {
+        font-size: var(--sm);
+        font-weight: 300;
+        color: var(--dark);
+        margin-bottom: 8px;
     }
 
     .dropdown-content a {

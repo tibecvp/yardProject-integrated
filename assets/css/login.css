@@ -2,7 +2,7 @@ main {
     height: calc(100vh - 63px);
 }
 
-.login {
+.login, .recover-password {
     width: 100%;
     height: 100%;
     display: flex;
@@ -37,6 +37,34 @@ main {
     flex-direction: column;
 }
 
+.form h2, .form p {
+    font-size: var(--lg);
+    text-align: center;
+    margin-top: 28px;
+}
+
+.form p {
+    font-weight: 300;
+    color: var(--dark);
+    margin: 16px 0 32px;
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.email-image img {
+    width: 80px;
+}
+
 .form a {
     color: var(--hospital-green);
     font-size: var(--sm);
@@ -62,6 +90,10 @@ main {
 
 .input-email {
     margin-bottom: 24px;
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--lg);
+    font-weight: 300;
 }
 
 .primary-button {
@@ -107,6 +139,10 @@ main {
         justify-content: space-between;
         padding: 20px;
         padding-bottom: 30px;
+    }
+
+    .recover-password {
+        justify-content: center;
     }
 
     .login-logo {

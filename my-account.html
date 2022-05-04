@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <title>Yard - Landingpage</title>
+    <link rel="stylesheet" href="./assets/css/my-account.css">
+    <title>My Account</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -32,10 +30,13 @@
                         <a href="/">Electronics</a>
                         <a href="/">Furnitures</a>
                         <a href="/">Toys</a>
-                        <a href="/">Others</a>
+                        <a href="/" class="end-section">Others</a>
+                        <a href="/">My orders</a>
+                        <a href="/">My account</a>
                     </div>
                     <div class="menu-down">
-                        <a href="./login.html">Log in</a>
+                        <p>camilayokoo@gmail.com</p>
+                        <a href="/">Sign out</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,6 @@
                 <a href="/">
                     <img src="./assets/imgs/logo_yard_sale.svg" alt="logo" class="logo">
                 </a>
-
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -68,13 +68,19 @@
             </div>
 
             <div class="navbar-right">
-                <ul>
-                    <li class="navbar-email">
-                        <a href="./login.html">Sign in</a>
+                <ul class="email-dropdown">
+                    <li class="navbar-email email-dropbtn">
+                        camilayokoo@gmail.com
+                        <span></span>
+                        <div class="email-dropdown-content">
+                            <a href="#">My orders</a>
+                            <a href="#">My account</a>
+                            <a href="/">Sign out</a>
+                        </div>
                     </li>
                     <li class="navbar-hopping-cart">
                         <img src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart">
-                        <div></div>
+                        <div>2</div>
                     </li>
                 </ul>
             </div>
@@ -82,29 +88,25 @@
     </header>
     <main>
         <div class="login">
-            <div class="close-icon-container">
-                <a href="/">
-                    <img src="./assets/icons/icon_close.png" alt="Close X icon" title="Close" class="close-icon">
-                </a>
-            </div>
             <div class="form-container">
-                <img src="./assets/imgs/logo_yard_sale.svg" alt="logo" class="login-logo">
-
-                <form action="./logged-in.html" class="form">
-                    <label for="email" class="label">Email address</label>
-                    <input type="text" id="email" placeholder="example@tibecvp.com" class="input input-email">
-                    <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-password">
-
-                    <input type="submit" value="Log in" class="primary-button login-button">
-                    <a href="./recover-password.html">Forgot my password</a>
+                <h1 class="tittle">My account</h1>
+    
+                <form action="/" class="form">
+                    <div>
+                        <label for="name" class="label">Name</label>
+                        <p class="value">Camila Yokoo</p>
+    
+                        <label for="email" class="label">Email address</label>
+                        <p class="value">camilayokoo@gmail.com</p>
+    
+                        <label for="password" class="label">Password</label>
+                        <p class="value">********</p>
+                    </div>
+    
+                    <input type="submit" value="Edit" class="secondary-button login-button">
                 </form>
-
             </div>
-            <button class="secondary-button signup-button" type="button" onclick="window.location.href='./Old/create-account.html';">Sign up</button>
         </div>
     </main>
-    <footer></footer>
 </body>
-
 </html>
