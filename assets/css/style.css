@@ -1,0 +1,189 @@
+
+/************* Search Bar *************/
+
+.searchbar-container {
+    min-width: 280px;
+    max-width: 1350px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.searchbar-component {
+    background-color: var(--text-input-field);
+    padding: 10px 12px;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+}
+
+.searchbar-component svg {
+    width: 24px;
+    height: 24px;
+}
+
+.searchbar-component svg path {
+    fill: #C7C7C7;
+}
+
+.searchbar-component input {
+    width: calc(100% - 30px);
+    border: 0;
+    background-color: var(--text-input-field);
+    color: var(--dark);
+    font-size: var(--lg);
+}
+
+.searchbar-container input:focus {
+    outline: none;
+}
+
+.searchbar-container input::placeholder {
+    color: var(--very-light-pink);
+}
+
+/* Filter options */
+
+.filters-component {
+    display: none;
+}
+
+/* End Filter Options */
+
+.sort-component {
+    color: var(--very-light-pink);
+}
+
+.sort-order {
+    font-weight: bold;
+    color: var(--dark);
+    margin-right: 4px;
+}
+
+.sort-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('https://www.svgrepo.com/show/393640/down-2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/************* Product Cards *************/
+
+.cards-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: 240px;
+}
+
+.product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-info figure {
+    margin: 0;
+}
+
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 6px 4px #c7c7c73b;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+/************* EXMAPLE *************/
+
+@media (max-width: 800px) {
+
+    /************* Search Bar *************/
+
+    .searchbar-container {
+        flex-direction: column;
+        padding: 16px 24px 20px;
+    }
+
+    .filters-component {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        padding: 6px 24px;
+        gap: 4px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+    }
+    
+    .filters-component .filter {
+        position: relative;
+        scroll-snap-align: center;
+    }
+    
+    .filters-component .filter a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        border: 1px solid var(--white);
+        padding: 4px 12px;
+        border-radius: 8px;
+    }
+    
+    .filters-component .filter:nth-child(1) a, .filters-component .filter a:hover {
+        border: 1px solid var(--hospital-green);
+        color: var(--hospital-green);
+    }
+
+    .searchbar-component {
+        width: 100%;
+    }
+
+    /************* Product cards *************/
+
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    .product-card {
+        width: 140px;
+    }
+
+    .product-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /************* EXMAPLE *************/
+}
