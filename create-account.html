@@ -30,21 +30,19 @@
                         <a href="/">Electronics</a>
                         <a href="/">Furnitures</a>
                         <a href="/">Toys</a>
-                        <a href="/" class="end-section">Others</a>
-                        <a href="./my-orders.html">My orders</a>
-                        <a href="#">My account</a>
+                        <a href="/">Others</a>
                     </div>
                     <div class="menu-down">
-                        <p>camilayokoo@gmail.com</p>
-                        <a href="/">Sign out</a>
+                        <a href="./login.html">Log in</a>
                     </div>
                 </div>
             </div>
 
             <div class="navbar-left">
-                <a href="./logged-in.html">
+                <a href="/">
                     <img src="./assets/imgs/logo_yard_sale.svg" alt="logo" class="logo">
                 </a>
+
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -68,19 +66,13 @@
             </div>
 
             <div class="navbar-right">
-                <ul class="email-dropdown">
-                    <li class="navbar-email email-dropbtn">
-                        camilayokoo@gmail.com
-                        <span></span>
-                        <div class="email-dropdown-content">
-                            <a href="./my-orders.html">My orders</a>
-                            <a href="#">My account</a>
-                            <a href="/">Sign out</a>
-                        </div>
+                <ul>
+                    <li class="navbar-email">
+                        <a href="./login.html">Sign in</a>
                     </li>
                     <li class="navbar-hopping-cart">
                         <img src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart">
-                        <div>2</div>
+                        <div></div>
                     </li>
                 </ul>
             </div>
@@ -91,19 +83,19 @@
             <div class="form-container">
                 <h1 class="tittle">My account</h1>
     
-                <form action="./edit-account.html" class="form">
+                <form action="./logged-in.html" class="form">
                     <div>
                         <label for="name" class="label">Name</label>
-                        <p class="value">Camila Yokoo</p>
+                        <input type="text" id="name" value="Camila Yokoo" class="input input-name">
     
                         <label for="email" class="label">Email address</label>
-                        <p class="value">camilayokoo@gmail.com</p>
+                        <input type="email" id="email" value="camilayokoo@gmail.com" class="input input-email">
     
                         <label for="password" class="label">Password</label>
-                        <p class="value">********</p>
+                        <input type="password" id="password" value="*********" class="input input-password">
                     </div>
     
-                    <input type="submit" value="Edit" class="secondary-button login-button">
+                    <input type="submit" value="Create" class="primary-button login-button">
                 </form>
             </div>
         </div>

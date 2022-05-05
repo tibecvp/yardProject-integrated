@@ -42,31 +42,43 @@
     margin: 8px 0 32px 0;
 }
 
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--md);
+    padding: 12px;
+    margin-bottom: 24px;
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--lg);
+    font-weight: 300;
+}
+
+.input-password {
+    margin-bottom: 40px;
+}
+
 .primary-button, .secondary-button {
     font-family: 'Quicksand', sans-serif;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--lg);
+    padding: 20px;
+    max-width: 400px;
 }
 
 .primary-button {
     background-color: var(--hospital-green);
     border: none;
-    border-radius: 8px;
     color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--lg);
-    padding: 20px;
 }
 
 .secondary-button {
     background-color: var(--white);
     border: 1px solid var(--hospital-green);
-    border-radius: 8px;
     color: var(--hospital-green);
-    width: 100%;
-    max-width: 400px;
-    cursor: pointer;
-    font-size: var(--lg);
-    padding: 20px;
 }
 
 @media (max-width: 800px) {
