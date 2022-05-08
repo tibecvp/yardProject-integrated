@@ -27,18 +27,18 @@
                             <img src="./assets/icons/icon_close.png" alt="Close X icon">
                         </a>
                         <p>CATEGORIES</p>
-                        <a href="/">All</a>
-                        <a href="/">Clothes</a>
-                        <a href="/">Electronics</a>
-                        <a href="/">Furnitures</a>
-                        <a href="/">Toys</a>
-                        <a href="/" class="end-section">Others</a>
+                        <a href="./">All</a>
+                        <a href="./">Clothes</a>
+                        <a href="./">Electronics</a>
+                        <a href="./">Furnitures</a>
+                        <a href="./">Toys</a>
+                        <a href="./" class="end-section">Others</a>
                         <a href="./my-orders.html">My orders</a>
                         <a href="./my-account.html">My account</a>
                     </div>
                     <div class="menu-down">
                         <p>camilayokoo@gmail.com</p>
-                        <a href="/">Sign out</a>
+                        <a href="./">Sign out</a>
                     </div>
                 </div>
             </div>
@@ -49,22 +49,22 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="/">All</a>
+                        <a href="./">All</a>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                        <a href="./">Clothes</a>
                     </li>
                     <li>
-                        <a href="/">Electronics</a>
+                        <a href="./">Electronics</a>
                     </li>
                     <li>
-                        <a href="/">Furniture</a>
+                        <a href="./">Furniture</a>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <a href="./">Toys</a>
                     </li>
                     <li>
-                        <a href="/">Others</a>
+                        <a href="./">Others</a>
                     </li>
                 </ul>
             </div>
@@ -77,12 +77,14 @@
                         <div class="email-dropdown-content">
                             <a href="./my-orders.html">My orders</a>
                             <a href="./my-account.html">My account</a>
-                            <a href="/">Sign out</a>
+                            <a href="./">Sign out</a>
                         </div>
                     </li>
                     <li class="navbar-hopping-cart">
-                        <img src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart">
-                        <div>2</div>
+                        <a href="#cart-modal">
+                            <img src="./assets/icons/icon_shopping_cart.svg" alt="shopping cart">
+                            <div>2</div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -90,6 +92,100 @@
     </header>
     <main>
         <section class="main-container">
+            <!-- PRODUCT MODAL -->
+            <aside class="product-detail-modal" id="product-detail-modal">
+                <div class="product-detail">
+                    <a href="#">
+                        <div class="product-detail-close">
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                    </a>
+
+                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="Basketball board">
+                    <div class="product-detail-info">
+                        <p>$250,00</p>
+                        <p>Basketball board</p>
+                        <p>This is a wonderful basketball board that you can put on your uard to play whenever you want
+                            and improve
+                            your basketball skills. This also can be a perfect gift your a relative.</p>
+                    </div>
+                    <div class="add-to-cart-button-container">
+                        <button class="primary-button add-to-cart-button">
+                            <img src="./assets/icons/icon_shopping_cart_white.svg" alt="add to cart">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            <!-- SHOPING CART MODAL -->
+            <aside class="cart-modal" id="cart-modal">
+                <div class="cart-modal-content">
+                    <div class="title-container">
+                        <a href="#">
+                            <img src="./assets/icons/flechita.svg" alt="arrow">
+                            <p class="title">Shopping cart</p>
+                        </a>
+                    </div>
+                    <div class="my-order-content">
+                        <div class="shopping-card">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="basketball">
+                            </figure>
+                            <p>Basketball board</p>
+                            <p>$ 200,00</p>
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                        <div class="shopping-card">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="basketball">
+                            </figure>
+                            <p>Basketball board</p>
+                            <p>$ 200,00</p>
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                        <div class="shopping-card">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="basketball">
+                            </figure>
+                            <p>Basketball board</p>
+                            <p>$ 200,00</p>
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                        <div class="shopping-card">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="basketball">
+                            </figure>
+                            <p>Basketball board</p>
+                            <p>$ 200,00</p>
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                        <div class="shopping-card">
+                            <figure>
+                                <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                    alt="basketball">
+                            </figure>
+                            <p>Basketball board</p>
+                            <p>$ 200,00</p>
+                            <img src="./assets/icons/icon_close.png" alt="close">
+                        </div>
+                    </div>
+                    <div class="order">
+                        <p>
+                            <span>Total</span>
+                        </p>
+                        <p>$ 560.00</p>
+                    </div>
+                    <button class="primary-button" onclick="window.location.href='./my-orders.html';">
+                        Checkout
+                    </button>
+                </div>
+            </aside>
+            <!-- SEARCH BAR -->
             <div class="searchbar-container">
                 <div class="searchbar-component">
                     <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -102,22 +198,22 @@
                 </div>
                 <div class="filters-component">
                     <div class="filter">
-                        <a href="/">All</a>
+                        <a href="./">All</a>
                     </div>
                     <div class="filter">
-                        <a href="/">Clothes</a>
+                        <a href="./">Clothes</a>
                     </div>
                     <div class="filter">
-                        <a href="/">Electronics</a>
+                        <a href="./">Electronics</a>
                     </div>
                     <div class="filter">
-                        <a href="/">Furniture</a>
+                        <a href="./">Furniture</a>
                     </div>
                     <div class="filter">
-                        <a href="/">Toys</a>
+                        <a href="./">Toys</a>
                     </div>
                     <div class="filter">
-                        <a href="/">Others</a>
+                        <a href="./">Others</a>
                     </div>
                 </div>
                 <div class="sort-component">
@@ -128,120 +224,128 @@
                     </p>
                 </div>
             </div>
+            <!-- CARDS -->
             <div class="cards-container">
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_added_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_added_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_added_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_added_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_added_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="">
-                    <div class="product-info">
-                        <div>
-                            <p>$120,00</p>
-                            <p>Basketball</p>
+                </a>
+                <a href="#product-detail-modal">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2529342/pexels-photo-2529342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        <div class="product-info">
+                            <div>
+                                <p>$120,00</p>
+                                <p>Basketball</p>
+                            </div>
+                            <figure>
+                                <img src="./assets/icons/bt_added_to_cart.svg" alt="">
+                            </figure>
                         </div>
-                        <figure>
-                            <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                        </figure>
                     </div>
-                </div>
-
+                </a>
             </div>
         </section>
     </main>

@@ -8,6 +8,8 @@
     <title>Recursos para Front-end</title>
     <style>
         body {
+            border-style: 100%;
+            min-width: 300px;
             background: #11203D;
             color: #fff;
             font-family: sans-serif;
@@ -15,7 +17,10 @@
 
         header {
             display: flex;
+            column-gap: 12px;
+            flex-wrap: wrap;
             flex-direction: row;
+            justify-content: space-between;
             border-bottom: 2px solid #33B1FF;
             padding: 1rem;
         }
@@ -23,10 +28,7 @@
         header h1 {
             color: #33B1FF;
             font-size: 1rem;
-        }
-
-        header h1:nth-child(2) {
-            margin-left: auto;
+            text-align: center;
         }
 
         section {
@@ -63,7 +65,16 @@
         a h4 {
             font-size: 1rem;
             color: #33B1FF;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: space-around;
+            }
+        }
+
     </style>
 </head>
 
@@ -73,7 +84,7 @@
         <h1>Proyecto: Yard Sale</h1>
     </header>
     <section>
-        <h2>Recurso para el proyecto</h2>
+        <h2>Recursos para el proyecto</h2>
         <ul>
             <li>
                 <a target="_blank" href="https://scene.zeplin.io/project/60afeeed20af1378ed046538">
