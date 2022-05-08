@@ -161,6 +161,15 @@
 
 /************* Search Bar *************/
 
+main {
+    height: calc(100vh - 63px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/************* Search Bar *************/
+
 .searchbar-container {
     min-width: 280px;
     max-width: 1350px;
@@ -289,6 +298,22 @@
     margin-top: 0;
     margin-bottom: 0;
     color: var(--very-light-pink);
+}
+
+.designs-link {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 0 24px 24px;
+}
+
+.designs-link a {
+    text-decoration: none;
+    font-size: var(--md);
+    color: var(--hospital-green);
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
 }
 
 /************* EXMAPLE *************/
